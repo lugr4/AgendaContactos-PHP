@@ -1,0 +1,27 @@
+{
+    "name": "lua/dev",
+    "description": "Proyecto para agenda de contactos",
+    "type": "project",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Lua\\": "src/",
+            "Lua\\Core\\": "src/core",
+            "App\\Helpers\\": "src/helpers",
+            "App\\": "src/app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lugr4",
+            "email": "suarezflores33@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php-di/php-di": "dev-master",
+        "vlucas/phpdotenv": "*",
+        "nikic/fast-route": "^2.0@dev",
+        "monolog/monolog": "^3.0@dev"
+    }
+}
