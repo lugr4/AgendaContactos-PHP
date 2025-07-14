@@ -52,7 +52,8 @@ class RoutesManager {
                 
                 list($class, $method) = $handler;
                 $controller = get_container()->get($class);
-                call_user_func_array([$controller, $method], $vars);
+                $response = call_user_func_array([$controller, $method], $vars);
+                echo $response; 
                 break;
         }
     }

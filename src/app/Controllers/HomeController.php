@@ -12,8 +12,8 @@ class HomeController {
         $this->render = $render;
     }
 
-    public function index() {
-        $this->render->view('home', ['message' => 'Hello from the view!']);
+    public function index(): string {
+        return $this->render->view('home', ['message' => 'Hello from the view!']);
     }
 
 }
