@@ -22,6 +22,7 @@
         "php-di/php-di": "dev-master",
         "vlucas/phpdotenv": "*",
         "nikic/fast-route": "^2.0@dev",
-        "monolog/monolog": "^3.0@dev"
+        "monolog/monolog": "^3.0@dev",
+        "eftec/bladeone": "dev-master"
     }
 }

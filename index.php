@@ -21,7 +21,7 @@ require_once __DIR__ . '/src/helpers/Logger.php';
 use Lua\Core\App;
 use DI\Container;
 use DI\ContainerBuilder;
-use Lua\Core\CLogger;
+use Lua\Helpers\Logger;
 
 /** 
  * Función para retornar una instacia del container PHP-DI para injeccion de instancias 
@@ -47,7 +47,7 @@ function init():void{
         $container = get_container();
         /** @var App $app */
         $app = $container->get(App::class);
-        log_info('Iniciando app', []);
+        Logger::i_log_info('Iniciando app', []);
         $app->run();
     } catch (Exception $e) {
         echo '<div class="error"><p><strong>Error:</strong> Failed to initialize. ' . $e->getMessage() . '</p></div>';

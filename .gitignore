@@ -5,3 +5,10 @@ composer.lock
 
 # Entorno
 .env
+
+#cache
+/cache
+
+
+#logs
+logs/*
